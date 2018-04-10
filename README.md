@@ -1,4 +1,4 @@
-#Season Ratings Plotter
+# Season Ratings Plotter
 This program creates a plot graph that shows user ratings for one or several
 seasons of a TV series. Ratings and other data are scraped (downloaded) from the
 [Internet Movie Database (IMDb)](http://www.imdb.com). You can include as many
