@@ -17,7 +17,7 @@ HTML_ERROR = (
 )
 
 
-class IMDBScraper():
+class IMDbScraper():
     """Scrape and export data from imdb.com."""
 
     def __init__(self, filename):
@@ -66,7 +66,7 @@ class IMDBScraper():
         - episode title
         - episode number
         - season number
-        - IMDB rating
+        - IMDb rating
 
         The series title is included as well.
         """
@@ -104,8 +104,8 @@ class IMDBScraper():
             episode_number = se_ep[1].strip().split(" ")[-1]
             episode["episode"] = int(episode_number)
 
-            # Get IMDB rating.
-            # For some episodes, IMDB shows no rating yet.
+            # Get IMDb rating.
+            # For some episodes, IMDb shows no rating yet.
             # In that case, set rating to zero and show a message.
             try:
                 rating = headerdiv.find("span", itemprop="ratingValue").text
@@ -144,7 +144,7 @@ class IMDBScraper():
 
 def main():
     """Call methods to scrape information and store it."""
-    imdbs = IMDBScraper(FILENAME)
+    imdbs = IMDbScraper(FILENAME)
     imdbs.scrape()
     imdbs.store()
 

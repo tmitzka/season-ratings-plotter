@@ -1,4 +1,4 @@
-"""Plot season ratings from IMDB, based on scraped data."""
+"""Plot season ratings from IMDb, based on scraped data."""
 
 import os
 import sys
@@ -93,7 +93,7 @@ class RatingsPlotter():
                 color=colors.pop()
             )
 
-        title = f"IMDB ratings for \"{self.series_title}\""
+        title = f"IMDb ratings for \"{self.series_title}\""
         plt.title(title)
         plt.xlabel("Episodes per season")
         plt.ylabel("Rating (1-10)")
@@ -105,11 +105,11 @@ class RatingsPlotter():
         print(
             "This program will create a graph to compare seasons "
             "of a series,\nbased on scraped data from the Internet "
-            "Movie Database (IMDB).\n")
+            "Movie Database (IMDb).\n")
 
         scrape = False
         while True:
-            # Scrape from IMDB if flag is set to True
+            # Scrape from IMDb if flag is set to True
             # or if data file isn't found.
             if scrape or not os.path.isfile(self.filename):
                 imdb_scraper.main()
