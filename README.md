@@ -17,7 +17,7 @@ commands:
 pip install matplotlib
 pip install seaborn
 ```
-### ratings_plotter.py
+### Run ratings_plotter.py
 To get things going, run the script *ratings_plotter.py* in this repository.
 That's the main program. It will automatically import the module
 *imdb_scraper.py* to scrape the required data. If you want, you can use the
@@ -48,4 +48,8 @@ you want to create a new graph for the same series, you can skip the scraping
 part. The file is overwritten after the scraping of a new series is finished.
 
 ## Good to Know
-...
+- If you're only interested in, say, season 8 and newer, start with the first
+episode of that season.
+- Episodes with a future release date won't be scraped.
+- For some episodes, the IMDb shows no rating yet. The program will insert an
+episode rating of 0 (zero) instead.
