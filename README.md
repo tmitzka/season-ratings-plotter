@@ -38,7 +38,7 @@ series, it saves all gathered data in a file named *scraped.py*.
 
 ### Creating the Plot Graph
 The scraping module has done its task, now it's time to create the graph.
-If you scraped more than two seasons, you can choose which of them you want
+If you scraped more than one season, you can choose which of them you want
 to include in the graph. The graph is displayed in a new window. When you close
 it, the program ends. You can **adjust the size** of the window by dragging its
 borders, and you can **save the graph** by clicking the disk icon below.

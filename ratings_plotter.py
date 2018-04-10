@@ -50,8 +50,6 @@ class RatingsPlotter():
         """Return season range for plot."""
         if len(self.seasons) == 1:
             season_range = range(self.seasons[0], self.seasons[0]+1)
-        elif len(self.seasons) == 2:
-            season_range = range(self.seasons[0], self.seasons[1]+1)
         else:
             # Ask user for min and max season to plot.
             print("\nPlease choose which seasons you want to include.\n")
