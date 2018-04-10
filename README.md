@@ -34,7 +34,7 @@ paste it to the prompt in your terminal.
 First, you have to confirm that this is the right series. Starting with the
 episode from the URL you provided, the program will collect data on every
 following episode, one season after another. When it reaches the end of the
-series, it saves all gathered data in a file named *scraped.py*.
+series, it saves all gathered data in a file named *scraped.json*.
 
 ### Creating the Plot Graph
 The scraping module has done its task, now it's time to create the graph.
