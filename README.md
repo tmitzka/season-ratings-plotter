@@ -1,4 +1,4 @@
-# Season Ratings Plotter
+#Season Ratings Plotter
 This program creates a plot graph that shows user ratings for one or several
 seasons of a TV series. Ratings and other data are scraped (downloaded) from the
 [Internet Movie Database (IMDb)](http://www.imdb.com). You can include as many
@@ -8,12 +8,17 @@ seasons in the plot graph as you like.
 ### Prerequisites
 Here is what you need:
 - Python version 3.6 or higher
-- Python libraries **matplotlib** and **seaborn**
+- Python library **requests**
+- Python library **beautifulsoup4**
+- Python library **matplotlib**
+- Python library **seaborn**
 
-These two libraries are not included in the Python Standard Library. An easy way
-to install them is by using *pip*. Open a terminal and enter the following
+These four libraries are not included in the Python Standard Library. An easy
+way to install them is by using *pip*. Open a terminal and enter the following
 commands:
 ```
+pip install requests
+pip install beautifulsoup4
 pip install matplotlib
 pip install seaborn
 ```
