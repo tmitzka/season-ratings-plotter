@@ -14,7 +14,7 @@ import imdb_scraper
 FILENAME = imdb_scraper.FILENAME
 
 
-class SeasonRatingsPlotter():
+class RatingsPlotter():
     """A class to create a graph of season ratings."""
 
     def __init__(self, filename):
@@ -138,7 +138,7 @@ class SeasonRatingsPlotter():
 
 def main(filename):
     """The main function."""
-    srp = SeasonRatingsPlotter(filename)
+    srp = RatingsPlotter(filename)
     srp.plot_ratings()
 
 if __name__ == "__main__":
