@@ -54,18 +54,20 @@ class RatingsPlotter():
             # Ask user for min and max season to plot.
             print("\nPlease choose which seasons you want to include.\n")
             min_max_seasons = []
-            required = ("first", "last")
-            for req in required:
-                season = ""
+            for season in ("first", "last"):
+                season_number = ""
                 while (
-                        not season.isdigit() or
-                        int(season) not in self.seasons
+                        not season_number.isdigit() or
+                        int(season_number) not in self.seasons
                 ):
-                    season = input(f"{req.title()} season number: ")
-                    if not season.isdigit() or int(season) not in self.seasons:
+                    season_number = input(f"{season.title()} season number: ")
+                    if (
+                            not season_number.isdigit() or
+                            int(season_number) not in self.seasons
+                    ):
                         print("Enter a number from", end=" ")
                         print(f"{self.seasons[0]} to {self.seasons[-1]}.\n")
-                min_max_seasons.append(int(season))
+                min_max_seasons.append(int(season_number))
                 print()
             # Sort list, just in case the higher number
             # was entered first.
