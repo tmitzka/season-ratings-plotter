@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Define constants.
-IMDB_URL = "http://www.imdb.com"
+IMDB_URL = "https://www.imdb.com"
 FILENAME = "scraped.json"
 HTML_ERROR = (
     "\nAn important HTML code element wasn't found!\n"
