@@ -1,7 +1,7 @@
 # Season Ratings Plotter
 This program creates a plot graph that shows user ratings for one or several
 seasons of a TV series. Ratings and other data are scraped (downloaded) from the
-[Internet Movie Database (IMDb)](http://www.imdb.com). You can include as many
+[Internet Movie Database (IMDb)](https://www.imdb.com). You can include as many
 seasons in the plot graph as you like.
 
 ## Getting Started
@@ -33,7 +33,7 @@ The program will ask you for the URL of an episode. For every TV series,
 IMDb.com has a summary page as well as pages for each episode. It's
 important that you look up the IMDb page of an *episode*. Preferably you should
 choose the first one in a season, but that's up to you. Here is an
-[example](http://www.imdb.com/title/tt4593118/?ref_=ttep_ep1). Copy the URL and
+[example](https://www.imdb.com/title/tt4593118/?ref_=ttep_ep1). Copy the URL and
 paste it to the prompt in your terminal.
 
 Starting with the episode from the URL you provided, the program will collect
